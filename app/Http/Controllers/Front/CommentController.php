@@ -40,7 +40,6 @@ class CommentController extends Controller
             'post_id' => $post->id,
             'user_id' => $request->user()->id,
             'parent_id' => $comment_id,
-            'parent_id' => $comment_id,
         ]);
 
         $post->user->notify(new Commented($post, $request->user()->id));
