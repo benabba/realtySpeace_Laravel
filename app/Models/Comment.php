@@ -24,6 +24,7 @@ class Comment extends Node
      * @var array
      */
     protected $fillable = ['body', 'post_id', 'user_id', 'parent_id'];
+    protected $fillable1 = ['body', 'post_id', 'user_id', 'parent_id'];
 
     /**
      * One to Many relation
